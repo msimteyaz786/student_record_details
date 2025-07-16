@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Record Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<h2>📋 Student Record Form</h2>
+<form id="studentForm">
+  <label>Student Name:</label>
+  <input type="text" id="name" required>
+
+  <label>Father's Name:</label>
+  <input type="text" id="fatherName" required>
+
+  <label>Date of Birth:</label>
+  <input type="date" id="dob" required>
+
+  <label>Age:</label>
+  <input type="number" id="age" required>
+
+  <label>Gender:</label>
+  <select id="gender" required>
+    <option value="">--Select--</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+
+  <label>Mobile Number:</label>
+  <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+
+  <label>Email ID:</label>
+  <input type="email" id="email" required>
+
+  <button type="submit" id="saveBtn">💾 Save</button>
+</form>
+
+<table id="recordTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Father's Name</th>
+      <th>DOB</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
